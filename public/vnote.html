@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recodiary</title>
+    <link rel="stylesheet" href="./css/vnote.css">
+    <link href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fo2WE1%2Fbtr0dqMBdKp%2Fjl5zYKGPtFlS59fGQOgLh0%2Fimg.png" rel="icon">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlyDrl%2Fbtr0h15wdd3%2Fa6S56yBHGoixKa0ukpjEL0%2Fimg.png" 
+                onclick="location.href='/main.html'" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="/todo.html">TO DO LIST</a></li>
+                    <li><a href="/note.html">NOTE</a></li>
+                    <li><a href="">VOICE NOTE</a></li>
+                    <li><a href="">WEATHER</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Voice Note</h2>
+                <h4><span class="multiText"></span></h4>
+            </div>
+            <div class="col-2">
+                 <div class="vnote">
+                    <h3>push record button</h3>
+                    <textarea id="convert_text"></textarea>
+                    <button id="click_to_convert">record</button>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/vnote.js" type="module"></script>
+
+    <!-- <h1><span class="multiText"></span></h1>  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["record it anytime you want", "using my new diary", "turn voice into text"],
+            loop : true,
+            typeSpeed : 100,
+            backlspeed : 80,
+            backDelay : 1500
+        });
+    </script>
+</body>
+</html>

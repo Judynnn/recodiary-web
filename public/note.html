@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recodiary</title>
+    <link rel="stylesheet" href="./css/note.css">
+    <link href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fo2WE1%2Fbtr0dqMBdKp%2Fjl5zYKGPtFlS59fGQOgLh0%2Fimg.png" rel="icon">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlyDrl%2Fbtr0h15wdd3%2Fa6S56yBHGoixKa0ukpjEL0%2Fimg.png" 
+                onclick="location.href='/main.html'" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="/todo.html">TO DO LIST</a></li>
+                    <li><a href="/note.html">NOTE</a></li>
+                    <li><a href="/vnote.html">VOICE NOTE</a></li>
+                    <li><a href="">WEATHER</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Note</h2>
+                <h4><span class="multiText"></span></h4>
+            </div>
+    </div>
+
+    <div class="notes" id="app">
+        <div class="notes__sidebar">
+            <button class="notes__add" type="button">Add Note</button>
+            <div class="notes__list">
+                <div class="notes__list-item notes__list-item--selected">
+                    <div class="notes__small-title">Lecture Notes</div>
+                    <div class="notes__small-body">I learnt nothing today.</div>
+                    <div class="notes__small-updated">Thursday 3:30pm</div>
+                </div>
+            </div>
+        </div>
+        <div class="notes__preview">
+            <input class="notes__title" type="text" placeholder="Title">
+            <textarea class="notes__body">write anything!</textarea>
+        </div> 
+    </div>
+    <script src="./js/note.js" type="module"></script>
+
+    <!-- <h1><span class="multiText"></span></h1>  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["write down anything you want", "using my new diary", "Today's memo"],
+            loop : true,
+            typeSpeed : 100,
+            backlspeed : 80,
+            backDelay : 1500
+        });
+    </script>
+</body>
+</html>
